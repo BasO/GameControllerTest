@@ -25,7 +25,3 @@ This app aims to explore the capabilities and behavior of Joy-Cons when connecte
 - macOS
 - Xcode
 - Nintendo Joy-Cons
-
-## License
-
-This project is licensed under the MIT License.
