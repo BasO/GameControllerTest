@@ -1,6 +1,6 @@
 # Joy-Con Game Controller Framework Test
 
-This project is a simple test application for the Game Controller framework, specifically designed to test the behavior of Nintendo Joy-Cons on macOS.
+This project is a simple test application for the Game Controller framework, specifically designed to test the haptic behavior of individual Nintendo Joy-Cons.
 
 ## Description
 
