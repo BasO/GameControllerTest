@@ -1,0 +1,62 @@
+{
+    "Version": 1.0,
+    "Metadata":
+        {
+            "Project" : "Haptic Sampler",
+            "Created" : "5 June 2019",
+            "Description" : "A continuous event tweaked by sloped parameter curves, emphasized by a precisely placed transient event, creating the feeling of a spring or rubberband."
+        },
+    "Pattern":
+    [
+        {
+            "Event":
+            {
+                "Time": 0.0,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 1 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.025,
+                "EventType": "HapticContinuous",
+                "EventDuration": 0.25,
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 1 }
+                ]
+            }
+        },
+        {
+            "ParameterCurve":
+            {
+                "ParameterID": "HapticIntensityControl",
+                "Time": 0.025,
+                "ParameterCurveControlPoints":
+                [
+                    { "Time": 0, "ParameterValue": 1 },
+                    { "Time": 0.25, "ParameterValue": 0.5 },
+                    { "Time": 0.40, "ParameterValue": 0.0 }
+                ]
+            }
+        },
+        {
+            "ParameterCurve":
+            {
+                "ParameterID": "HapticSharpnessControl",
+                "Time": 0.025,
+                "ParameterCurveControlPoints":
+                [
+                    { "Time": 0, "ParameterValue": 1.0 },
+                    { "Time": 0.40, "ParameterValue": 0 }
+                ]
+            }
+        }
+    ]
+}
